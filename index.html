@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de impuestos</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Calculadora de impuestos</h1>
+        <form id="taxCalculator" class="mt-4">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" id="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salario:</label>
+                <input type="number" class="form-control" id="salary" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Edad:</label>
+                <input type="number" class="form-control" id="age" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateTaxes()">Calcular impuestos</button>
+        </form>
+
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
